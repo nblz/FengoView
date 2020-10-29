@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fengo</title>
+	<link href="https://fonts.googleapis.com/css?family=Cousine:400,700%7CMerriweather+Sans:400,700,800%7CRoboto+Condensed:400,700&display=swap" rel="stylesheet">
+	<!-- inject:css -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<!-- endinject -->
+	<script async src="https://kit.fontawesome.com/f6a3fb5c9a.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<div class="nav_wrapper">
+			<nav class="container mini-menu flex font-merri">
+				<ul class="mini-menu__left flex">
+					<li class="mini-menu__left_item">
+						<a href="#">My Account</a>
+					</li>
+					<li class="mini-menu__left_item">
+						<a href="#">MY Wishlist (<span>0</span>)</a>
+					</li>
+					<li class="mini-menu__left_item">
+						<a href="#">Checkout</a>
+					</li>
+					<li class="mini-menu__left_item login">
+						<a href="#">Log In<span class="login_or"> or </span><span>Register</span></a>
+					</li>
+				</ul>
+				<ul class="mini-menu__right flex">
+					<li class="mini-menu__right_item">
+						<form action="?">
+							<select name="units" id="units">
+								<option>US Dollars</option>
+								<option>RUB</option>
+								<option>Euro</option>
+							</select>
+						</form>
+					</li>
+					<li class="mini-menu__right_item lang-select pos_rel">
+						<form action="?" class="lang-form">
+							<label for="lang">English
+								<input class="lang" type="radio" name="lang" id="lang" value="English">
+							</label>
+							<ul class="flex pos_rel">
+								<li class="lang_en flex checked">English</li>
+								<li class="lang_it flex">Italian</li>
+								<li class="lang_sp flex">Spanish</li>
+								<li class="lang_fr flex">French</li>
+								<li class="lang_de flex">German</li>
+							</ul>
+						</form>
+					</li>
+					<li class="mini-menu__right_item">
+						<a href="#" title="Go to cart" class="cart">My Bag: <span> 2 </span> item(s)</a>
+						<div class="cart__hover pos_abs">
+							<p>Recently added item(s)</p>
+							<div class="cart__list">
+								<figure class="cart__items flex">
+									<a href="#" class="cart__wrapper">
+										<img src="img/cart_foto1.jpg" alt="excellent photo" class="cart__photo">
+										<div>
+											<div class="cart__desription">
+												<p class="trade__items_name">Mustard yellow ruffle</p>
+												<p class="trade__items_article">dress</p>
+											</div>
+											<div class="flex cart_pricer_wrapper">
+												<p class="cart__price trade__items_price">$<span>478</span></p>
+											</div>
+										</div>
+									</a>
+									<div class="cart__deleter"></div>
+								</figure>
+								<figure class="cart__items flex">
+									<a href="#" class="cart__wrapper">
+										<img src="img/cart_foto2.jpg" alt="excellent photo" class="cart__photo">
+										<div>
+											<div class="cart__desription">
+												<p class="trade__items_name">Navy Blue Silk </p>
+												<p class="trade__items_article">Pleated Shift</p>
+											</div>
+											<div class="flex cart_pricer_wrapper">
+												<p class="cart__price_old trade__items_price_old">$<span>250</span></p>
+												<p class="cart__price trade__items_price">$<span>180</span></p>
+											</div>
+										</div>
+									</a>
+									<div class="cart__deleter"></div>
+								</figure>
+							</div>
+							<div class="summary flex">
+								<p class="summary__shipping">SHIPPING: <span>$7</span></p>
+								<p class="summary__total">TOTAL: <span>$736</span></p>
+							</div>
+							<div class="quick_bar flex">
+								<button class="to_bag">cart</button>
+								<button>checkout</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="container head_wrapper">
+			<div class="search_wrapper clearfix pos_rel">
+				<input type="text" class="search" placeholder="Find it here..."><a href="#" class="fas fa-search search__icon pos_abs"></a>
+			</div>
+			<div class="logo_menu_wrapper flex pos_rel">
+				<a href="/FengoView" class="logo_wrapper flex">
+					<img class="logo" src="img/logo.png" alt="Logo">
+					<h1 class="title font-merri">FENGO</h1>
+				</a>
+				<div class="hamburger flex">
+					<div class="hamburger__left flex">
+						<i class="fas fa-bars"></i>
+						<h2>NAVIGATION</h2>
+					</div>
+					<div class="basket flex">
+						<img src="img/basket.png" alt="sum of basket">
+						<p class="basket__price">$<span>0.00</span></p>
+					</div>
+				</div>
+				<nav class="menu font-cousine flex">
+					<ul class="flex">
+						<li class="menu__item hided">
+							<a href="#">Fashion</a>
+							<div class="pseudo"></div>
+                            <div class="mega-menu container">
+                                <div class="mega-menu__item">
+                                    <div class="list_wrapper flex">
+                                        <ul class="hided">
+											<li class="item_head">Clothing
+												<div class="pseudo"></div>
+											</li>
+                                            <li><a href="#">Dresses</a></li>
+                                            <li><a href="#">Jeans & Trousers</a></li>
+                                            <li><a href="#">Blouses & Shirts</a></li>
+                                            <li><a href="#">Tops & T-Shirts</a></li>
+                                            <li><a href="#">Jackets & Coats</a></li>
+                                            <li><a href="#">Skirts</a></li>
+                                        </ul>
+                                        <ul class="hided">
+											<li class="item_head">Shoes
+												<div class="pseudo"></div>
+											</li>
+                                            <li><a href="#">Formal Shoes</a></li>
+                                            <li><a href="#">Casual Shoes</a></li>
+                                            <li><a href="#">Sandals</a></li>
+                                            <li><a href="#">Boots</a></li>
+                                            <li><a href="#">Wide Fit</a></li>
+                                            <li><a href="#">Slippers</a></li>
+                                        </ul>
+                                        <ul class="hided">
+											<li class="item_head">ACCESSORIES
+												<div class="pseudo"></div>
+											</li>
+                                            <li><a href="#">Bags & Purses</a></li>
+                                            <li><a href="#">Belts</a></li>
+                                            <li><a href="#">Gloves</a></li>
+                                            <li><a href="#">Jewellery</a></li>
+                                            <li><a href="#">Sunglasses</a></li>
+                                            <li><a href="#">Hair Accessories</a></li>
+                                        </ul>
+                                        <ul class="hided">
+											<li class="item_head">Sports
+												<div class="pseudo"></div>
+											</li>
+                                            <li><a href="#">Sport Tops & Vests</a></li>
+                                            <li><a href="#">Hoodies</a></li>
+                                            <li><a href="#">Swimwear</a></li>
+                                            <li><a href="#">Footwear</a></li>
+                                            <li><a href="#">Sports Underwear</a></li>
+                                            <li><a href="#">Bags</a></li>
+                                        </ul>
+										<a href="#" class="sales">
+                                            <p>Dresseses</p>
+											<p>from $10</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="mega-menu__item promo_row">
+                                    <a href="#" class="promo_row_1 row_item">
+                                        <p>new arrivals</p>
+                                        <p>for</p>
+                                        <p>Babies</p>
+                                    </a>
+                                    <a href="#" class="promo_row_2 row_item">designer Shoes</a>
+                                    <a href="#" class="promo_row_3 row_item">
+										<div>
+											<p>Bags</p>
+											<p>$30</p>
+											<p>& under</p>
+										</div>
+                                    </a>
+                                </div>
+                            </div>
+						</li>
+						<li class="menu__item hided">
+							<a href="#">Electronics</a>
+							<div class="pseudo"></div>
+						</li>
+						<li class="menu__item hided">
+							<a href="#">Gifts</a>
+							<div class="pseudo"></div>
+						</li>
+						<li class="menu__item hided">
+							<a href="#">Books</a>
+							<div class="pseudo"></div>
+						</li>
+						<li class="menu__item hided">
+							<a href="#">At Home</a>
+							<div class="pseudo"></div>
+						</li>
+						<li class="menu__item hided">
+							<a href="#">Music</a>
+							<div class="pseudo"></div>
+						</li>
+						<li class="menu__item hided">
+							<a href="#">Sale</a>
+							<div class="pseudo"></div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="slider main-slider pos_rel flex">
+		<div class="slider__track flex">
+			<div class="flex"></div>
+			<div class="flex">
+				<div class="slide__wrapper flex pos_rel">
+					<div class="slide_1 slide font-cousine">
+						<p>Check your</p>
+						<h3 class="font-merri">autumn<br>style</h3>
+						<h4 class="font-robot">All the trends you need<br>this season</h4>
+						<a class="font-merri" href="#">read it now ></a>
+					</div>
+				</div>
+			</div>
+			<div class="flex">
+				<div class="slide__wrapper grid_center pos_rel">
+					<div class="slide_2">
+						<p>you pay less</p>
+						<p>everyone else pays attention.</p>
+						<p>Vivamus lacinia urna lorem, eget laoreet mauris lobortis quis. Aliquam augue tortor, aliquet nec tempor a, dapibus vitae nunc. Maecenas vitae purus molestie, tempus sem quis, varius tortor.</p>
+						<a href="#">get your discount ></a>
+					</div>
+				</div>
+			</div>
+			<div class="flex">
+				<div class="slide__wrapper grid_center pos_rel">
+					<div class="slide_3">
+						<p>the</p>
+						<p>SALE</p>
+						<p>final reduction</p>
+						<p>up to 70% off</p>
+						<p>all sale items</p>
+						<a href="#">shop now ></a>
+					</div>
+				</div>
+			</div>
+			<div class="flex"></div>
+		</div>
+		<div class="slider__change pos_abs">
+			<i class="fas far fa-circle" data-id="0"></i>
+			<i class="far fa-circle" data-id="1"></i>
+			<i class="far fa-circle" data-id="2"></i>
+		</div>
+		<div class="flex slider__chevrons-wrapper pos_abs">
+			<button name="prev-slide" class="chev_left slider__chevrons">
+				<i class="fas fa-chevron-left"></i>
+			</button>
+			<button name="next-slide" class="chev_right slider__chevrons">
+				<i class="fas fa-chevron-right"></i>
+			</button>
+		</div>
+	</div>
+	<div class="grupp_wrapper">
+		<div class="container grupp">
+			<div class="grupp__slider slider flex pos_rel">
+				<div class="slider__track flex">
+					<div class="flex"></div>
+					<div class="flex min-w-100">
+						<div class="slide__wrapper flex pos_rel">
+							<div class="grupp__slider__content slide1 font-cousine flex">
+								<h4>exclusive</h4>
+								<p class="font-robot">discount codes & offers</p>
+							</div>
+							<a class="font-merri pos_abs" href="#">get your discount ></a>
+						</div>
+					</div>
+					<div class="flex min-w-100">
+						<div class="slide__wrapper wrapper2 flex pos_rel">
+							<div class="grupp__slider__content slide2 font-cousine flex">
+								<p>secret</p>
+								<p>SALE</p>
+								<p>up to 50% off</p>
+								<p>use code: Secret to get 2% off*</p>
+							</div>
+							<a class="font-merri pos_abs" href="#">get your discount ></a>
+						</div>
+					</div>
+					<div class="flex"></div>
+				</div>
+				<div class="flex slider__chevrons-wrapper pos_abs">
+					<button class="chev_left slider__chevrons">
+						<i class="fas fa-chevron-left"></i>
+					</button>
+					<button class="chev_right slider__chevrons">
+						<i class="fas fa-chevron-right"></i>
+					</button>
+				</div>
+			</div>
+			<div class="grupp__styles-wrapper flex">
+				<div class="grupp__styles">
+					<p class="grupp__styles_top font-cousine">the</p>
+					<h4 class="font-merri">hottest styles</h4>
+					<p class="grupp__styles_bott font-robot">are here</p>
+				</div>
+				<a class="font-merri" href="#">watch now ></a>
+			</div>
+			<div class="grupp__jewelry flex">
+				<div>
+					<h4 class="font-merri">jewelry</h4>
+					<p class="font-robot">every third item is free!</p>
+					<a class="font-merri" href="#">buy now ></a>
+				</div>
+			</div>
+			<div class="grupp__look slider pos_rel flex">
+				<div class="slider__track pos_rel flex">
+					<div class="flex"></div>
+					<div class="flex min-w-100">
+						<div class="slide__wrapper slide1 pos_rel flex">
+							<div class="grupp__look__content">
+								<h4 class="font-robot">LOOKBOOK</h4>
+								<p class="grupp__look__content__first font-cousine ">women</p>
+								<p class="grupp__look__content__second font-cousine">autumn 2013</p>
+							</div>
+						</div>
+					</div>
+					<div class="flex min-w-100">
+						<div class="slide__wrapper slide2 pos_rel flex">
+							<div class="grupp__look__content">
+								<h4 class="font-robot">LOOKBOOK</h4>
+								<p class="grupp__look__content__first font-cousine ">men</p>
+								<p class="grupp__look__content__second font-cousine">autumn 2013</p>
+							</div>
+						</div>
+					</div>
+					<div class="flex"></div>
+				</div>
+				<div class="grupp__look__foot pos_abs">
+					<a class="font-merri" href="#">get the look ></a>
+					<div class="slider__change">
+						<i class="far fas fa-circle" data-id="0"></i>
+						<i class="far fa-circle" data-id="1"></i>
+					</div>
+				</div>
+			</div>
+			<div class="grupp__acessory flex pos_rel">
+				<div class="grupp__acessory__content">
+					<h4 class="font-merri">accessories</h4>
+					<p class="font-robot">Complete your style</p>
+					<a class="font-merri" href="#">get the look ></a>
+				</div>
+			</div>
+			<div class="grupp__news font-robot flex">
+				<p>what's new?</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<nav class="trade__menu">
+			<ul class="flex">
+				<li class="trade__menu_item">
+					<button>new arrivals</button>
+				</li>
+				<li class="trade__menu_item">
+					<button>Featured</button>
+				</li>
+				<li class="trade__menu_item">
+					<button>Special</button>
+				</li>
+				<li class="trade__menu_item">
+					<button>bestsellers</button>
+				</li>
+			</ul>
+		</nav>
+		<div class="trade__items_wrapper">
+			<div class="card_wrapper pos_rel">
+				<a href="#" class="trade__items item1 pos_rel" data-id="1">
+					<img src="img/item2.png" alt="tall man with cardigan weared" class="trade__items_poster">
+					<div class="flex">
+						<div class="trade__items__description">
+							<p class="trade__items_name">Carded Cotton Shawl</p>
+							<p class="trade__items_article">Cardigan</p>
+						</div>
+						<div>
+							<p class="trade__items_price">$<span>187</span></p>
+						</div>
+					</div>
+					<p class="stars" title="4.0"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+				</a>
+				<div class="palette pos_abs">
+					<button class="palette__color red"></button>
+					<button class="palette__color blue"></button>
+					<button class="palette__color black"></button>
+				</div>
+				<div class="card__hover">
+					<div class="quick_bay quick_bar flex">
+						<button class="to_bag">add to bag</button>
+						<button class="to_info">more info</button>
+					</div>
+					<div class="add flex">
+						<button class="add__to-wishlist">+ Add to Wishlist</button>
+						<button class="add__to-compare">+ Add to Compare</button>
+					</div>
+				</div>
+			</div>
+			<div class="card_wrapper pos_rel">
+				<a href="#" class="trade__items item2 pos_rel" data-id="2">
+					<img src="img/item2.png" alt="tall man with cardigan weared" class="trade__items_poster">
+					<div class="trade__items__description flex">
+						<div>
+							<p class="trade__items_name">Shetland Wool Full-Zip</p>
+							<p class="trade__items_article">Sweater</p>
+						</div>
+						<div>
+							<p class="trade__items_price_old">$<span>180</span></p>
+							<p class="trade__items_price">$<span>110</span></p>
+						</div>
+					</div>
+					<div class="sale_icon pos_abs">-50%</div>
+					<p class="stars" title="1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+				</a>
+				<div class="palette pos_abs">
+					<button class="palette__color red"></button>
+					<button class="palette__color blue"></button>
+					<button class="palette__color black"></button>
+				</div>
+				<div class="card__hover">
+					<div class="quick_bay quick_bar flex">
+						<button class="to_bag">add to bag</button>
+						<button class="to_info">more info</button>
+					</div>
+					<div class="add flex">
+						<button class="add__to-wishlist">+ Add to Wishlist</button>
+						<button class="add__to-compare">+ Add to Compare</button>
+					</div>
+				</div>
+			</div>
+			<div class="card_wrapper pos_rel">
+				<a href="#" class="trade__items item3 pos_rel" data-id="3">
+					<img src="img/item2.png" alt="tall man with cardigan weared" class="trade__items_poster">
+					<div class="trade__items__description flex">
+						<div>
+							<p class="trade__items_name">Mustard Yellow Ruffle</p>
+							<p class="trade__items_article">White Shirt</p>
+						</div>
+						<div>
+							<p class="trade__items_price">$<span>478</span></p>
+						</div>
+					</div>
+					<div class="new_icon pos_abs">NEW</div>
+					<p class="stars" title="2.0"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+				</a>
+				<div class="palette pos_abs">
+					<button class="palette__color red"></button>
+					<button class="palette__color blue"></button>
+					<button class="palette__color black"></button>
+				</div>
+				<div class="card__hover">
+					<div class="quick_bay quick_bar flex">
+						<button class="to_bag">add to bag</button>
+						<button class="to_info">more info</button>
+					</div>
+					<div class="add flex">
+						<button class="add__to-wishlist">+ Add to Wishlist</button>
+						<button class="add__to-compare">+ Add to Compare</button>
+					</div>
+				</div>
+			</div>
+			<div class="card_wrapper pos_rel">
+				<a href="#" class="trade__items item4 pos_rel" data-id="4">
+					<img src="img/item2.png" alt="tall man with cardigan weared" class="trade__items_poster">
+					<div class="trade__items__description flex">
+						<div>
+							<p class="trade__items_name">Fine Custom-Fit Poplin</p>
+							<p class="trade__items_article">Regent</p>
+						</div>
+						<div>
+							<p class="trade__items_price">$<span>1150</span></p>
+						</div>
+					</div>
+					<div class="out_icon pos_abs">out of stock</div>
+					<p class="stars" title="3.0"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+				</a>
+				<div class="palette pos_abs">
+					<button class="palette__color red"></button>
+					<button class="palette__color blue"></button>
+					<button class="palette__color black"></button>
+				</div>
+				<div class="card__hover">
+					<div class="quick_bay quick_bar flex">
+						<button class="to_bag">add to bag</button>
+						<button class="to_info">more info</button>
+					</div>
+					<div class="add flex">
+						<button class="add__to-wishlist">+ Add to Wishlist</button>
+						<button class="add__to-compare">+ Add to Compare</button>
+					</div>
+				</div>
+			</div>
+			<div class="card_wrapper pos_rel">
+				<a href="#" class="trade__items item5 pos_rel" data-id="5">
+					<img src="img/item2.png" alt="tall man with cardigan weared" class="trade__items_poster">
+					<div class="trade__items__description flex">
+						<div>
+							<p class="trade__items_name">Carded Cotton Shawl</p>
+							<p class="trade__items_article">Cardigan</p>
+						</div>
+						<div>
+							<p class="trade__items_price">$<span>248</span></p>
+						</div>
+					</div>
+					<p class="stars" title="3.0"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+				</a>
+				<div class="palette pos_abs">
+					<button class="palette__color red"></button>
+					<button class="palette__color blue"></button>
+					<button class="palette__color black"></button>
+				</div>
+				<div class="card__hover">
+					<div class="quick_bay quick_bar flex">
+						<button class="to_bag">add to bag</button>
+						<button class="to_info">more info</button>
+					</div>
+					<div class="add flex">
+						<button class="add__to-wishlist">+ Add to Wishlist</button>
+						<button class="add__to-compare">+ Add to Compare</button>
+					</div>
+				</div>
+			</div>
+			<div class="card_wrapper pos_rel">
+				<a href="#" class="trade__items item6 pos_rel" data-id="6">
+					<img src="img/item2.png" alt="tall man with cardigan weared" class="trade__items_poster">
+					<div class="trade__items__description flex">
+						<div>
+							<p class="trade__items_name">Shetland Wool Full-Zip</p>
+							<p class="trade__items_article">Sweater</p>
+						</div>
+						<div>
+							<p class="trade__items_price">$<span>657</span></p>
+						</div>
+					</div>
+					<p class="stars" title="0"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+				</a>
+				<div class="palette pos_abs">
+					<button class="palette__color red"></button>
+					<button class="palette__color blue"></button>
+					<button class="palette__color black"></button>
+				</div>
+				<div class="card__hover">
+					<div class="quick_bay quick_bar flex">
+						<button class="to_bag">add to bag</button>
+						<button class="to_info">more info</button>
+					</div>
+					<div class="add flex">
+						<button class="add__to-wishlist">+ Add to Wishlist</button>
+						<button class="add__to-compare">+ Add to Compare</button>
+					</div>
+				</div>
+			</div>
+			<div class="card_wrapper pos_rel">
+				<a href="#" class="trade__items item7 pos_rel" data-id="7">
+					<img src="img/item2.png" alt="tall man with cardigan weared" class="trade__items_poster">
+					<div class="trade__items__description flex">
+						<div>
+							<p class="trade__items_name">Mustard Yellow Ruffle</p>
+							<p class="trade__items_article">White Shirt</p>
+						</div>
+						<div>
+							<p class="trade__items_price_old">$<span>321</span></p>
+							<p class="trade__items_price">$<span>214</span></p>
+						</div>
+					</div>
+					<p class="stars" title="0"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+				</a>
+				<div class="palette pos_abs">
+					<button class="palette__color red"></button>
+					<button class="palette__color blue"></button>
+					<button class="palette__color black"></button>
+				</div>
+				<div class="card__hover">
+					<div class="quick_bay quick_bar flex">
+						<button class="to_bag">add to bag</button>
+						<button class="to_info">more info</button>
+					</div>
+					<div class="add flex">
+						<button class="add__to-wishlist">+ Add to Wishlist</button>
+						<button class="add__to-compare">+ Add to Compare</button>
+					</div>
+				</div>
+			</div>
+			<div class="card_wrapper pos_rel">
+				<a href="#" class="trade__items item8 pos_rel" data-id="8">
+					<img src="img/item2.png" alt="tall man with cardigan weared" class="trade__items_poster">
+					<div class="trade__items__description flex">
+						<div>
+							<p class="trade__items_name">Fine Custom-Fit Poplin</p>
+							<p class="trade__items_article">Regent</p>
+						</div>
+						<div>
+							<p class="trade__items_price">$<span>147</span></p>
+						</div>
+					</div>
+					<p class="stars" title="0"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+				</a>
+				<div class="palette pos_abs">
+					<button class="palette__color red"></button>
+					<button class="palette__color blue"></button>
+					<button class="palette__color black"></button>
+				</div>
+				<div class="card__hover">
+					<div class="quick_bay quick_bar flex">
+						<button class="to_bag">add to bag</button>
+						<button class="to_info">more info</button>
+					</div>
+					<div class="add flex">
+						<button class="add__to-wishlist">+ Add to Wishlist</button>
+						<button class="add__to-compare">+ Add to Compare</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="trade__more pos_rel"><span>Show More</span></button>
+	</div>
+	<footer class="pos_rel">
+		<div class="container flex col_wrapper pos_rel">
+			<section class="flex first_col">
+				<h4 class="hidden">First vertical column</h4>
+				<article class="about footer_block">
+					<figure class="clearfix">
+						<h4>About fengo shop</h4>
+						<img src="#" alt="" class="foot_foto_frame">
+						<p class="descr">Morbi pretium odio in dapibus varius. Integer sagittis, tellus ac venenatis venenatis, ipsum ligula auctor lectus, suscipit velit quam quis turpis. Fusce scelerisque aliquet commodo. Sed lobortis laoreet risus vitae tincidunt. Ut consectetur nec purus in egestas. Pellentesque vehicula urna purus.<br>
+							<a href="#" class="read_more">Read more ></a>
+						</p>
+					</figure>
+				</article>
+				<article class="blog_sec footer_block pos_rel">
+					<h4 class="blog_head">From the Blog</h4>
+					<div class="slider__chevrons-wrapper">
+						<button class="blog_left slider__chevrons pos_abs">
+							<i class="fas fa-chevron-left"></i>
+						</button>
+						<button class="blog_right slider__chevrons  pos_abs">
+							<i class="fas fa-chevron-right"></i>
+						</button>
+					</div>
+					<div class="blog-slider">
+						<div class="flex slider__track">
+							<div class="flex"></div>
+							<div class="flex">
+								<div class="slide__wrapper slide2">
+									<figure class="blog_item">
+										<a href="#">
+											<img src="#" alt="" class="blog_item__frame">
+											<p class="blog__descr">Pellentesque vehicula <br>urna purus</p>
+										</a>
+									</figure>
+								</div>
+							</div>
+							<div class="flex">
+								<div class="slide__wrapper slide3">
+									<figure class="blog_item">
+										<a href="#">
+											<img src="#" alt="" class="blog_item__frame">
+											<p class="blog__descr">Curabitur faucibus aliquam<br>felis quis</p>
+										</a>
+									</figure>
+								</div>
+							</div>
+							<div class="flex">
+								<div class="slide__wrapper slide4">
+									<figure class="blog_item">
+										<a href="#">
+											<img src="#" alt="" class="blog_item__frame">
+											<p class="blog__descr">Curabitur faucibus aliquam<br>felis quis</p>
+										</a>
+									</figure>
+								</div>
+							</div>
+							<div class="flex"></div>
+						</div>
+					</div>
+				</article>
+				<article class="back_form footer_block">
+					<h4>QUICK CONTACT</h4>
+					<div class="back_form__wrapper flex">
+						<div class="pos_rel map_wrapper">
+							<script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1ec8f11afb8773a0548313aa1dbe0226940c446c2d82d0ee13ee4e0775a01271&amp;width=320&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+						</div>
+						<form class="form__item_wrapper flex" action="?">
+							<input class="back_form__name" type="text" placeholder="Enter your name">
+							<input class="back_form__mail" type="text" placeholder="Enter your E-mail">
+							<textarea class="back_form__mess" placeholder="Enter your message"></textarea>
+							<input type="submit" class="read_more" value="Send message >">
+						</form>
+					</div>
+				</article>
+				<form class="follow_wrapper pos_rel">
+					<input type="text" class="follow" placeholder="Enter your e-mail for stay in the know">
+					<input type="text" class="follow" placeholder="Enter your e-mail">
+					<i class="fas fa-chevron-right pos_abs"></i>
+				</form>
+			</section>
+			<section class="flex second_col">
+				<h4 class="hidden">Second vertical column</h4>
+				<article class="favorite footer_block pos_rel">
+					<h4>Most favorite</h4>
+					<div class="slider__chevrons-wrapper">
+						<button class="blog_left slider__chevrons pos_abs">
+							<i class="fas fa-chevron-left"></i>
+						</button>
+						<button class="blog_right slider__chevrons pos_abs">
+							<i class="fas fa-chevron-right"></i>
+						</button>
+					</div>
+					<div class="favorite__slider">
+						<div class="flex slider__track">
+							<div class="flex"></div>
+							<div class="flex">
+								<div class="slide__wrapper slide1">
+									<figure class="favorite__item">
+										<a href="#">
+											<img src="#" alt="" class="favorite__item__frame">
+											<div class="flex">
+												<p class="favorite__item_descr">Black puplum waist tie kudu dress</p>
+												<div class="favorite__item_price-wrapper">
+													<p class="favorite__item_price">$<span>478</span></p>
+												</div>
+											</div>
+										</a>
+									</figure>
+								</div>
+							</div>
+							<div class="flex">
+								<div class="slide__wrapper slide2">
+									<figure class="favorite__item">
+										<a href="#">
+											<img src="#" alt="" class="favorite__item__frame">
+											<div class="flex">
+												<p class="favorite__item_descr">Pale pink and black buttoned dress</p>
+												<div class="favorite__item_price-wrapper">
+													<p class="favorite__item_old_price">$<span>250</span></p>
+													<p class="favorite__item_price">$<span>180</span></p>
+												</div>
+											</div>
+										</a>
+									</figure>
+								</div>
+							</div>
+							<div class="flex">
+								<div class="slide__wrapper slide2">
+									<figure class="favorite__item">
+										<a href="#">
+											<img src="#" alt="" class="favorite__item__frame">
+											<div class="flex">
+												<p class="favorite__item_descr">Pale pink and black buttoned dress</p>
+												<div class="favorite__item_price-wrapper">
+													<p class="favorite__item_old_price">$<span>250</span></p>
+													<p class="favorite__item_price">$<span>180</span></p>
+												</div>
+											</div>
+										</a>
+									</figure>
+								</div>
+							</div>
+							<div class="flex"></div>
+						</div>
+					</div>
+				</article>
+				<section class="twit_line">
+					<h4 class="hidden">twitter line</h4>
+					<div class="twit_head_wrapper flex">
+						<h4 class="twit_head">TWITTER</h4>
+						<button class="like-follow_btn">FOLLOW</button>
+					</div>
+					<article class="twit_line__item">
+						<div class="twit_line__item_head_wrapper flex">
+							<img src="img/icon.png" alt="" class="avatar">
+							<div>
+								<h5 class="name">Promokit</h5>
+								<p class="email">@marek_mnishek</p>
+							</div>
+						</div>
+						<p class="line_text">Vivamus id quam quis velit semper adipiscing nec in libero. Praesent quis lectus at justo ornare laoreet. Proin luctus viverra <a href="#">bit.ly/1byZ6QM</a></p>
+						<div class="line_foot flex">
+							<p class="date">9 October 2013</p>
+							<div class="flex">
+								<button><img src="img/repl.svg" alt="">Reply</button>
+								<button class="retwt"><img src="img/retw.svg" alt="">Retweet</button>
+							</div>
+						</div>
+					</article>
+					<article class="twit_line__item">
+						<div class="twit_line__item_head_wrapper flex">
+							<img src="img/icon.png" alt="" class="avatar">
+							<div>
+								<h5 class="name">Promokit</h5>
+								<p class="email">@marek_mnishek</p>
+							</div>
+						</div>
+						<p class="line_text">We’ve just finished and released our new eCommerce PSD template "Venedor" More details here: <a href="#">bit.ly/19SYsM6</a></p>
+						<div class="line_foot flex">
+							<p class="date">28 October 2013</p>
+							<div class="foot_in_wrapp flex">
+								<button><img src="img/repl.svg" alt="">Reply</button>
+								<button><img src="img/retw.svg" alt="">Retweet</button>
+							</div>
+						</div>
+					</article>
+				</section>
+				<section class="facebook footer_block">
+					<h4 class="hidden">facebook block</h4>
+					<div class="flex">
+						<h4 class="head">FACEBOOK</h4>
+						<button class="like-follow_btn">LIKE</button>
+					</div>
+					<p class="facebook_count">1452 people like <span>PromoKit</span></p>
+					<div class="fb_line__grupp">
+						<figure>
+							<a href="#">
+								<img src="#" alt="" class="fb_line__frames">
+								<p class="fb_line__descr">Anna</p>
+							</a>
+						</figure>
+						<figure>
+							<a href="#">
+								<img src="#" alt="" class="fb_line__frames">
+								<p class="fb_line__descr">Tom</p>
+							</a>
+						</figure>
+						<figure>
+							<a href="#">
+								<img src="#" alt="" class="fb_line__frames">
+								<p class="fb_line__descr">Antuan</p>
+							</a>
+						</figure>
+						<figure>
+							<a href="#">
+								<img src="#" alt="" class="fb_line__frames">
+								<p class="fb_line__descr">Maria</p>
+							</a>
+						</figure>
+						<figure>
+							<a href="#">
+								<img src="#" alt="" class="fb_line__frames">
+								<p class="fb_line__descr">Ben</p>
+							</a>
+						</figure>
+						<figure>
+							<a href="#">
+								<img src="#" alt="" class="fb_line__frames">
+								<p class="fb_line__descr">Nina</p>
+							</a>
+						</figure>
+						<figure>
+							<a href="#">
+								<img src="#" alt="" class="fb_line__frames">
+								<p class="fb_line__descr">Antuan</p>
+							</a>
+						</figure>
+						<figure>
+							<a href="#">
+								<img src="#" alt="" class="fb_line__frames">
+								<p class="fb_line__descr">Maria</p>
+							</a>
+						</figure>
+					</div>
+				</section>
+			</section>
+			<nav class="foot_menu third_col">
+				<ul class="foot_menu__section">
+					<li><h4 class="foot_menu__head">INFORMATION</h4></li>
+					<li class="section__items"><a href="#">New products</a></li>
+					<li class="section__items"><a href="#">Top sellers</a></li>
+					<li class="section__items"><a href="#">Specials products</a></li>
+					<li class="section__items"><a href="#">Manufacturers</a></li>
+					<li class="section__items"><a href="#">Suppliers</a></li>
+					<li class="section__items"><a href="#">Our stores</a></li>
+				</ul>
+				<ul class="foot_menu__section">
+					<li><h4 class="foot_menu__head">MY ACCOUNT</h4></li>
+					<li class="section__items"><a href="#">My account</a></li>
+					<li class="section__items"><a href="#">Personal information</a></li>
+					<li class="section__items"><a href="#">Addresses</a></li>
+					<li class="section__items"><a href="#">Discount</a></li>
+					<li class="section__items"><a href="#">Orders history</a></li>
+					<li class="section__items"><a href="#">Your Vouchers</a></li>
+				</ul>
+				<ul class="foot_menu__section">
+					<li><h4 class="foot_menu__head">CUSTOMER <br>SERVICE</h4></li>
+					<li class="section__items"><a href="#">Help & contact</a></li>
+					<li class="section__items"><a href="#">Shipping & taxes</a></li>
+					<li class="section__items"><a href="#">Return policy</a></li>
+					<li class="section__items"><a href="#">Careers</a></li>
+					<li class="section__items"><a href="#">Affiliates</a></li>
+					<li class="section__items"><a href="#">Legal Notice</a></li>
+				</ul>
+				<ul class="foot_menu__section">
+					<li><h4 class="foot_menu__head">CONTACT INFO</h4></li>
+					<li class="section__items">Vigo Shop Ltd</li>
+					<li class="section__items">United Kingdom</li>
+					<li class="section__items">London 02587</li>
+					<li class="section__items">Oxford Street 48/188</li>
+					<li class="section__items flex">Working days: <br>Mon. - Sun.</li>
+					<li class="section__items flex">Working hours: <br>9 AM - 8 PM</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="foot_bottom flex container">
+			<div class="foot_bottom__left">
+				<div class="payment-wrapper flex">
+					<img src="img/pay/disc.png" alt="pay with a discover" class="payment">
+					<img src="img/pay/am_ex.png" alt="pay with a american-express" class="payment">
+					<img src="img/pay/visa.png" alt="pay with a visa" class="payment">
+					<img src="img/pay/master.png" alt="pay with a mastercard" class="payment">
+					<img src="img/pay/pp.png" alt="pay with a paypal" class="payment">
+					<img src="img/pay/maestro.png" alt="pay with a maestro" class="payment">
+				</div>
+			</div>
+			<div class="foot_bottom__right flex">
+				<button class="social_frame facebook">F</button>
+				<button class="social_frame twit">T</button>
+				<button class="social_frame call">A</button>
+				<button class="social_frame instagram">D</button>
+				<button class="social_frame link">I</button>
+				<button class="social_frame other">C</button>
+				<button class="social_frame skype">O</button>
+				<button class="social_frame mail">K</button>
+			</div>
+			<p class="copyright">© 2013 Powered by WooCommerce™. All Rights Reserved.</p>
+			<a href="#" class="go_up__link">
+				<div class="go_up__wrapper flex">
+					<div class="go_up pos_abs"><i class="fas fa-chevron-up"></i></div>
+				</div>
+			</a>
+		</div>
+	</footer>
+	<!-- inject:js -->
+	<script src="js/slider.min.js"></script>
+	<script src="js/main.min.js"></script>
+	<!-- endinject -->
+</body>
+</html>
